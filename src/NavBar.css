@@ -46,4 +46,12 @@
     background-color: yellow;
     font-size: 20px;
   }
+  @media screen and (max-width: 768px) {
+    .settings{
+      display: none;
+    }
+    #menu-icon{
+      display: none;
+    }
+  }
   
