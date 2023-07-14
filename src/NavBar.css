@@ -53,5 +53,8 @@
     #menu-icon{
       display: none;
     }
+    .search-bar{
+      margin-left: 10px;
+  }
   }
   
