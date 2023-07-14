@@ -1,6 +1,25 @@
+
+.mail-container{
+  width: max-content;
+  height: 90vh;
+  color: #202124;
+  background-color: rgba(238, 226, 214, 0.775);
+  border-radius: 5px;
+  font-family: "Google Sans",Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-size: .875rem;
+  letter-spacing: normal;
+  overflow-y: scroll;
+}
 .mail{
     display: flex;
+    display: flex;
     align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.141);
+    border-bottom: 1px;
+    padding: 5px;
+   
+  
   }
   .mail:hover{
     box-shadow: 3px 0px 3px 0px gray;
@@ -10,11 +29,13 @@
     padding-left: 5px;
   }
   .mail p{
+    margin: 5px;
     opacity: 0.6;
   }
   .mail svg{
     opacity: 0.5;
     transition: opacity 0.2s ease-in-out;
+    cursor: pointer;
   }
   .mail:hover svg {
     opacity: 1;
@@ -36,12 +57,12 @@
     padding-left: 30px;
   }
   .action-icons{
-display: flex;
-align-items: center;
-gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
 }
 
-  
   @media screen and (max-width: 768px) {
     .action-icons-container{
         display: none;

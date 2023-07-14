@@ -29,7 +29,7 @@ export const Inbox = () => {
     setStarList(updatedStarList);
   };
   return (
-    <div>
+    <div className="mail-container">
       {inboxData.map((data, index) => (
         <div
           className="mail"
@@ -62,10 +62,10 @@ export const Inbox = () => {
           <div className={hoverIndex === index ? "" : "action-icons-container"}>
             {hoverIndex === index ? (
               <div className="action-icons">
-                <ArchiveOutlinedIcon />
-                <DeleteOutlineOutlinedIcon />
-                <MarkAsUnreadOutlinedIcon />
-                <AccessTimeOutlinedIcon />
+                <ArchiveOutlinedIcon size="small" />
+                <DeleteOutlineOutlinedIcon size="small" />
+                <MarkAsUnreadOutlinedIcon size="small" />
+                <AccessTimeOutlinedIcon size="small" />
               </div>
             ) : (
               <h4>{data.time}</h4>
